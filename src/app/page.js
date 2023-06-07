@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 export default function Home() {
-  const menu = document.getElementById('menu')
+  
   const listStyle = 'sm:hover:scale-125 sm:duration-300 sm:transition-all'
   return (
     <main className='h-screen bg-gradient-to-t from-pink-300 to-sky-300'>
@@ -16,6 +16,7 @@ export default function Home() {
         </div>
         <div>
           <h1 className='text-5xl sm:hidden' onClick={() => {
+            const menu = document.getElementById('menu')
             menu.classList.toggle('top-[0%]')
           }}>=</h1> 
         </div>
